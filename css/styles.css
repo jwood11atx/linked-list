@@ -1,3 +1,122 @@
 body {
-  background-color: yellow;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: inline-block;
+  width: 90%;
+  font-size: 50px;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+}
+
+input {
+  width: 90%;
+  margin: 20px 0;
+}
+
+a {
+  border-bottom: 1px solid #CFD8BC;
+  color: #607D8B;
+  text-decoration: none;
+  outline: none;
+}
+
+h2 {
+  font-size: 24px
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card {
+  border: 1px solid #607D8B;
+  background-color: white;
+  color: #455A64;
+  padding: 10px 15px;
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.card div {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #CFD8BC;
+  border-bottom: 1px solid #CFD8BC;
+
+}
+
+
+#left-section {
+  position: fixed;
+  text-align: center;
+  height: 100vh;
+  width: 50vw;
+  background-color: #455864;
+}
+
+#right-section {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: #CFD8DC;
+  align-items: center;
+}
+
+#enter-btn {
+  background-color: #FFC107;
+  width: 92%;
+  color: white;
+  margin: 20px 0;
+}
+
+#enter-btn:hover {
+  background-color: #FFD773;
+}
+
+#read-btn {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-bottom: 1px solid #455A64;
+  color: #607D8B;
+}
+
+#delete-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-bottom: 1px solid #455A64;
+  color: #607D8B;
+}
+
+#delete-btn:hover, #read-btn:hover, a:hover {
+  border-bottom: 1px solid #FFC107;
+  cursor: pointer;
+}
+
+#delete-btn:focus, #read-btn:focus, a:focus {
+  border-bottom: 1px solid #FFC107;
 }
