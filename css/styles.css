@@ -94,7 +94,10 @@ h2 {
 #enter-btn:hover {
   background-color: #FFD773;
 }
-
+#enter-btn:disabled {
+  background-color:#F2F4F4;
+  cursor: default;
+}
 .read-btn, .delete-btn {
   position: absolute;
   bottom: 5px;
@@ -161,6 +164,7 @@ h2 {
     font-size: 25px;
     font-weight: 400px;
   }
+
   #enter-btn {
     height: 32px;
     margin: 10px auto;
@@ -171,12 +175,13 @@ h2 {
     /*text-align: center;*/
     height: 50vh;
     width: 100vw;
+    z-index: 2;
   }
 
   #right-section {
-    position: variable;
+    position: absolute;
     right: 0;
     margin-top: 50vh;
     width: 100vw;
-    height: 50vh;
-  }
+    z-index: 3;
+    }
