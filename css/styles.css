@@ -25,7 +25,7 @@ input {
 }
 
 a {
-  border-bottom: 1px solid #CFD8BC;
+  border-bottom: 1px solid #F2F4F4;
   color: #607D8B;
   text-decoration: none;
   outline: none;
@@ -102,7 +102,7 @@ h2 {
   outline: none;
   padding: 0;
   margin: 2px;
-  border-bottom: 1px solid #CFD8BC;
+  border-bottom: 1px solid #F2F4F4;
   color: #607D8B;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 400;
@@ -133,8 +133,7 @@ h2 {
 }
 
 .markLink {
-  color: red;
-  border-bottom: 5px solid #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
 }
 
 
