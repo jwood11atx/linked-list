@@ -60,9 +60,7 @@ h2 {
   margin-bottom: 20px;
   border-top: 1px solid #CFD8BC;
   border-bottom: 1px solid #CFD8BC;
-
 }
-
 
 #left-section {
   position: fixed;
@@ -97,34 +95,48 @@ h2 {
   background-color: #FFD773;
 }
 
-#read-btn, #delete-btn {
+.read-btn, .delete-btn {
   position: absolute;
   bottom: 5px;
   border: none;
   outline: none;
-  background-color: white;
-  border-bottom: 1px solid #CFD8BC;
-  color: #607D8B;
   padding: 0;
   margin: 2px;
+  border-bottom: 1px solid #CFD8BC;
+  color: #607D8B;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 400;
 }
 
-#read-btn {
+.read-btn {
   left: 15px;
 }
 
-#delete-btn {
+.delete-btn {
   right: 15px;
 }
 
-#delete-btn:hover, #read-btn:hover, a:hover {
+.delete-btn:hover, .read-btn:hover, a:hover {
   border-bottom: 1px solid #FFC107;
+  font-weight: 800;
   cursor: pointer;
 }
 
-#delete-btn:focus, #read-btn:focus, a:focus {
-  border-bottom: 1px solid #FFC107;
+.markRead {
+  color: red;
+  font-weight: 800;
+  border: none;
 }
+
+.markCard {
+  background-color: #F2F4F4;
+}
+
+.markLink {
+  color: red;
+  border-bottom: 5px solid #CFD8DC;
+}
+
 
 @media screen and (max-width: 500px){
 
