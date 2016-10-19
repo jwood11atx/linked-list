@@ -97,26 +97,24 @@ h2 {
   background-color: #FFD773;
 }
 
-#read-btn {
+#read-btn, #delete-btn {
   position: absolute;
   bottom: 5px;
-  left: 15px;
   border: none;
   outline: none;
   background-color: white;
-  border-bottom: 1px solid #455A64;
+  border-bottom: 1px solid #CFD8BC;
   color: #607D8B;
+  padding: 0;
+  margin: 2px;
+}
+
+#read-btn {
+  left: 15px;
 }
 
 #delete-btn {
-  position: absolute;
-  bottom: 5px;
   right: 15px;
-  border: none;
-  outline: none;
-  background-color: white;
-  border-bottom: 1px solid #455A64;
-  color: #607D8B;
 }
 
 #delete-btn:hover, #read-btn:hover, a:hover {

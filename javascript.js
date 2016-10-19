@@ -9,7 +9,7 @@ function createCard(){
   $("#right-section").append(
     `<article class="card">
     <h2>`+websiteTitle+`<h2>
-    <div><a id="web-link" href="https://`+websiteURL+`" target="_blank">`+websiteURL+`</a></div>
+    <div><a id="web-link" href="http://`+websiteURL+`" target="_blank">`+websiteURL+`</a></div>
     <button type="button" id="read-btn">Read</button>
     <button type="button" id="delete-btn">Delete</button>
     </article>`);
