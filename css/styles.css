@@ -140,6 +140,9 @@ h2 {
   border-bottom: 1px solid #CFD8DC;
 }
 
+#enter-btn:disabled {
+  background-color: red;
+}
 
 @media screen and (max-width: 500px){
 
