@@ -94,10 +94,12 @@ h2 {
 #enter-btn:hover {
   background-color: #FFD773;
 }
+
 #enter-btn:disabled {
   background-color:#F2F4F4;
   cursor: default;
 }
+
 .read-btn, .delete-btn {
   position: absolute;
   bottom: 5px;
@@ -109,6 +111,8 @@ h2 {
   color: #607D8B;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 400;
+
+  overflow:
 }
 
 .read-btn {
