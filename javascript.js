@@ -1,5 +1,6 @@
 $("#enter-btn").click(function(){
   createCard();
+  emptyFields();
 });
 
 $("#right-section").on("click",'.read-btn', function(){
@@ -13,6 +14,17 @@ $("#right-section").on("click", ".delete-btn", function(){
   $(this).closest(".card").remove();
 });
 
+$("#title, #website").keyup(function(){
+  if($("#title").val() !== "" && $("#website").val() !== ""){
+    $("#enter-btn").attr("disabled", false);
+  } else {
+    $("#enter-btn").attr("disabled", true);
+  }
+});
+
+
+
+
 function createCard(){
   var websiteTitle = $("#title").val();
 
@@ -24,6 +36,11 @@ function createCard(){
     <button type="button" class="delete-btn">Delete</button>
     </article>`);
 }
+
+function emptyFields() {
+  $("#title").val("");
+  $("#website").val("");
+};
 
 function createLink(){
   var websiteURL = $("#website").val();
