@@ -1,6 +1,8 @@
 $("#enter-btn").click(function(){
   createCard();
   emptyFields();
+  updateLinkCount();
+  updateUnreadCount();
 });
 
 $("#right-section").on("click",'.read-btn', function(){
@@ -8,10 +10,15 @@ $("#right-section").on("click",'.read-btn', function(){
   $(this).closest(".card").find(".delete-btn").toggleClass("markLink");
   $(this).closest(".card").toggleClass("markCard");
   $(this).closest(".card").find("a").toggleClass("markLink");
+  updateReadCount();
+  updateUnreadCount();
 });
 
 $("#right-section").on("click", ".delete-btn", function(){
   $(this).closest(".card").remove();
+  updateReadCount();
+  updateUnreadCount();
+  updateLinkCount();
 });
 
 $("#title, #website").keyup(function(){
@@ -40,9 +47,23 @@ function createCard(){
 function emptyFields() {
   $("#title").val("");
   $("#website").val("");
+  $("#enter-btn").attr("disabled", true);
 };
 
 function createLink(){
   var websiteURL = $("#website").val();
   return `<a id="web-link" href="http://`+websiteURL+`" target="_blank">`+websiteURL+`</a>`
+}
+
+function updateLinkCount(){
+  $("#linkCount").text("Links: "+ $(".card").length);
+}
+
+function updateReadCount(){
+  $("#readCount").text("Read: "+ $(".markRead").length);
+}
+
+function updateUnreadCount(){
+  var count = $(".card").length - $(".markRead").length;
+  $("#unreadCount").text("Unread: "+ count);
 }
