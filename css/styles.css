@@ -1,6 +1,7 @@
 body {
   position: relative;
   font-family: "Open Sans", sans-serif;
+  background-color: #CFD8DC;
 }
 
 header {
@@ -168,7 +169,7 @@ h2 {
   }
 
   #left-section {
-    position: absolute;
+    position: relative;
     /*text-align: center;*/
     height: 50vh;
     width: 100vw;
@@ -176,9 +177,10 @@ h2 {
   }
 
   #right-section {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-top: 50vh;
+    overflow: hidden;
     width: 100vw;
     z-index: 3;
+    height: 100%;
     }
