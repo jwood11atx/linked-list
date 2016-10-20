@@ -151,6 +151,17 @@ p {
   cursor: default;
 }
 
+#readCount {
+  display: inline-block;
+}
+
+#clear-read-btn {
+  padding: 0;
+  display: inline-block;
+}
+
+
+
 @media screen and (max-width: 768px){
 
   header {
