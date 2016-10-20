@@ -25,6 +25,11 @@ input {
   font-size: 15px;
 }
 
+input:focus{
+  outline: none;
+  border: 2px solid #FFC107;
+}
+
 a {
   border-bottom: 1px solid #F2F4F4;
   color: #607D8B;
@@ -193,8 +198,7 @@ p {
 
   #left-section {
     position: relative;
-    /*text-align: center;*/
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     z-index: 2;
   }
