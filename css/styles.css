@@ -43,7 +43,7 @@ h2 {
 }
 
 p {
-  /*font-family: fantasy;*/
+  font-family: fantasy;
   margin-top: 5px;
   color: white;
 }
@@ -85,8 +85,6 @@ p {
   color: #607D8B;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 400;
-
-  overflow:
 }
 
 .read-btn {
@@ -156,21 +154,20 @@ p {
   cursor: default;
 }
 #clear-read-btn{
-  height: 10px;
   border: none;
   background-color: #455864;
+  outline: none;
 }
 #clear-read-btn img{
-  height:12px;
+  height:15px;
+  filter: grayscale(1) brightness(10);
 }
+
 #clear-read-btn img:hover{
- background-color: #FCC107;
+cursor: pointer;
+filter: grayscale(0) brightness(1);
 }
-#clear-read-btn:focus{
-  outline: none;
-  height:18px;
-  border: 2px solid #FFC107;
-}
+
 #readCount {
   display: inline-block;
 }
