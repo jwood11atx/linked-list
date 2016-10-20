@@ -166,6 +166,11 @@ p {
 #clear-read-btn img:hover{
  background-color: #FCC107;
 }
+#clear-read-btn:focus{
+  outline: none;
+  height:18px;
+  border: 2px solid #FFC107;
+}
 #readCount {
   display: inline-block;
 }
