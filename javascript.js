@@ -23,6 +23,15 @@ $("#right-section").on("click", ".delete-btn", function(){
   updateLinkCount();
 });
 
+$("#clear-read-btn").on("click", function(){
+  $(".markRead").closest(".card").remove();
+  updateReadCount();
+  updateUnreadCount();
+  updateLinkCount();
+})
+
+
+
 <!--//Clear Inputfield-->
 $("#title, #website").keyup(function(){
   var checkTitle = /\S/.test($("#title").val());
