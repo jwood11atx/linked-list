@@ -18,7 +18,7 @@ header img {
 }
 
 input {
-  width: 90%;
+  width: 350px;
   height: 25px;
   margin: 20px 0;
   font-family: "Open Sans";
@@ -35,6 +35,12 @@ a {
 
 h2 {
   font-size: 24px
+}
+
+p {
+  font-family: fantasy;
+  margin-top: 5px;
+  color: white;
 }
 
 .container {
@@ -61,44 +67,6 @@ h2 {
   margin-bottom: 20px;
   border-top: 1px solid #CFD8BC;
   border-bottom: 1px solid #CFD8BC;
-}
-
-#left-section {
-  position: fixed;
-  text-align: center;
-  height: 100vh;
-  width: 50vw;
-  background-color: #455864;
-}
-
-#right-section {
-  position: fixed;
-  right: 0;
-  width: 50vw;
-  height: 100vh;
-  overflow: scroll;
-  background-color: #CFD8DC;
-  align-items: center;
-}
-
-#enter-btn {
-  background-color: #FFC107;
-  width: 92%;
-  height: 25px;
-  color: white;
-  margin: 20px 0;
-  border: none;
-  font-family: "Open Sans";
-  font-size: 15px;
-}
-
-#enter-btn:hover {
-  background-color: #FFD773;
-}
-
-#enter-btn:disabled {
-  background-color:#F2F4F4;
-  cursor: default;
 }
 
 .read-btn, .delete-btn {
@@ -144,9 +112,92 @@ h2 {
   border-bottom: 1px solid #CFD8DC;
 }
 
-#enter-btn:disabled {
-  background-color: red;
+#left-section {
+  position: fixed;
+  text-align: center;
+  height: 100vh;
+  width: 50vw;
+  background-color: #455864;
 }
+
+#right-section {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: #CFD8DC;
+  align-items: center;
+}
+
+#enter-btn {
+  background-color: #FFC107;
+  width: 360px;
+  height: 30px;
+  color: white;
+  margin: 20px 0;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+#enter-btn:hover {
+  background-color: #FFD773;
+  cursor: pointer;
+}
+
+#enter-btn:disabled {
+  background-color: lightgray;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px){
+
+  header {
+    display: inline-block;
+    width: 90%;
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  header img {
+    height: 25px;
+  }
+
+  input {
+    height: 30px;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: 400px;
+  }
+
+  #enter-btn {
+    height: 35px;
+    width: 92%;
+    margin: 10px auto;
+  }
+
+  #left-section {
+    position: relative;
+    /*text-align: center;*/
+    height: 30vh;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  #right-section {
+    position: relative;
+    right: 0;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 3;
+    height: 100%;
+    }
+
+
 
 @media screen and (max-width: 500px){
 
@@ -165,13 +216,15 @@ h2 {
 
   input {
     height: 30px;
+    width: 90%;
     margin: 10px auto;
     font-size: 25px;
     font-weight: 400px;
   }
 
   #enter-btn {
-    height: 32px;
+    height: 35px;
+    width: 92%;
     margin: 10px auto;
   }
 

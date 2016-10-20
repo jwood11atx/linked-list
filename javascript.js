@@ -1,3 +1,5 @@
+
+<!--//Button Effects-->
 $("#enter-btn").click(function(){
   createCard();
   emptyFields();
@@ -21,20 +23,20 @@ $("#right-section").on("click", ".delete-btn", function(){
   updateLinkCount();
 });
 
+<!--//Clear Inputfield-->
 $("#title, #website").keyup(function(){
-  if($("#title").val() !== "" && $("#website").val() !== ""){
+  var checkTitle = /\S/.test($("#title").val());
+  var checkWebsite = /\S/.test($("#website").val());
+  if(checkTitle && checkWebsite){
     $("#enter-btn").attr("disabled", false);
   } else {
     $("#enter-btn").attr("disabled", true);
   }
 });
 
-
-
-
+<!--//Functions-->
 function createCard(){
   var websiteTitle = $("#title").val();
-
   $("#right-section").append(
     `<article class="card">
     <h2>`+websiteTitle+`<h2>
